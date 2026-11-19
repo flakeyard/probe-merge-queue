@@ -1,0 +1,11 @@
+name: ci
+on:
+  pull_request:
+  merge_group:
+permissions:
+  contents: read
+jobs:
+  required:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 5; echo ok
